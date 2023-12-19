@@ -41,7 +41,7 @@ class Topic2Joy:
         self.as4 = rospy.Subscriber(node_name + '/axis4', Float64, self.axis_callback4)
 
         # パブリッシャーの設定
-        self.joy_pub = rospy.Publisher('joy_topic', Joy, queue_size=10)
+        self.joy_pub = rospy.Publisher('joy', Joy, queue_size=10)
 
     # button data callbacks
     def button_callback1(self, msg):
